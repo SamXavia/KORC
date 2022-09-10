@@ -1,0 +1,44 @@
+/* Hyperlinks */
+a:link, a:visited, a:active {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #636363;
+  text-decoration: none;
+}
+
+/* Body */
+.body {
+  color:#FFFFFF;
+  background-color: #000000;
+  font-family: system-ui;
+}
+
+/* Nav */
+.nav {
+  color: #FFFFFF;
+  font-family: system-ui;
+  font-size: 25px;
+  text-align: center;
+  word-spacing: 20px;
+}
+
+/* Main Content Box */
+.box {
+  /* Box Style */
+  background-color: #272727;
+  border-radius: 2.5vw;
+  /* Text */
+  color: #FFFFFF;
+  font-family: system-ui;
+}
+
+/* Main Content Box - Contents */
+.box > div {
+  width: 97.5%;
+  height: auto;
+  margin: auto;
+  border-radius: 15px;
+}
