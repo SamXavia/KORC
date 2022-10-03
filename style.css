@@ -23,17 +23,17 @@ a:hover {
 
 /* Icon */
 .icon {
-  width: 2.75vw;
-  height: 2.75vw;
+  width: 82px;
+  height: 82px;
 }
 
 /* Nav */
 .nav {
   color: #FFFFFF;
   font-family: system-ui;
-  font-size: 2.5vw;
+  font-size: 42px;
   text-align: center;
-  word-spacing: 2.5vw;
+  word-spacing: 100px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -42,8 +42,8 @@ a:hover {
 .box {
   /* Box Style */
   background-color: #272727;
-  border-radius: 2.5vw;
-  outline: 0.25vw solid #e9e427;
+  border-radius: 32px;
+  outline: 5px solid #e9e427;
   margin-left: auto;
   margin-right: auto;
   width: 95%;
@@ -57,6 +57,35 @@ a:hover {
   width: 97.5%;
   height: auto;
   margin: auto;
-  border-radius: 1vw;
-  font-size: 1.25vw;
+  border-radius: 16px;
+  font-size: 24px;
+}
+
+/* Hover Text */
+.hovertext {
+  position: relative;
+  border-bottom: 1px dotted black;
+}
+
+.hovertext:before {
+  content: attr(data-hover);
+  visibility: hidden;
+  opacity: 0;
+  width: 200px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px 0;
+  transition: opacity 0.25s ease-in-out;
+
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 110%;
+}
+
+.hovertext:hover:before {
+  opacity: 1;
+  visibility: visible;
 }
