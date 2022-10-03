@@ -18,8 +18,13 @@ a:hover {
 
 .title {
   color:#FFFFFF;
-  size: 1vw;
   font-family: system-ui;
+}
+
+/* Icon */
+.icon {
+  width: 2.75vw;
+  height: 2.75vw;
 }
 
 /* Nav */
@@ -31,10 +36,6 @@ a:hover {
   word-spacing: 2.5vw;
   margin-left: auto;
   margin-right: auto;
-  outline: 0.25vw solid #278ae2;
-  border-radius: 2.5vw;
-  background-color: #272727;
-  width: 50%;
 }
 
 /* Main Content Box */
