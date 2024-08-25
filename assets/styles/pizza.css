@@ -1,0 +1,391 @@
+* {
+    font-family: "Balsamiq Sans", sans-serif;
+}
+
+body {
+    background: #f5f5f5ea;
+    margin: 0;
+    box-sizing: border-box;
+}
+    @media (max-width: 967px) {
+        html {
+            font-size: 80%;
+            /* Adjust the base font size for smaller screens */
+        }
+    }
+
+    @media (max-width: 768px) {
+        html {
+            font-size: 60%;
+            /* Adjust the base font size for smaller screens */
+        }
+    }
+
+/* Styled Contact Button on Navigation */
+.contact-nav {
+    align-self: center;
+    margin: 0 .5rem;
+    padding: .75rem 2rem;
+    background-color: #006d69;
+    color: #f5f5f5ea;
+    border: none;
+    border-radius: 1.5rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+    -webkit-filter: drop-shadow(.2rem .2rem .2rem #272727);
+    filter: drop-shadow(-.2rem .2rem -.2rem #272727);
+}
+
+/* Navigation */
+header {
+    position: relative;
+    z-index: 1;
+    height: 3rem;
+}
+    header div img {
+        width: .5rem;
+        -webkit-filter: drop-shadow(.1rem .2rem .1rem #272727);
+        filter: drop-shadow(-.2rem .2rem .2rem #272727);
+    }
+
+.nav {
+    background: linear-gradient(90deg, rgb(7, 90, 0) 50%, rgb(0, 58, 116) 100%);
+    color: #f5f5f5ea;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem;
+    position: fixed;
+    width: 100%;
+    height: 4rem;
+    font-size: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0,0,0, 0.1);
+}
+    .nav div:nth-child(1) img {
+        padding: 0 .5rem;
+    }
+    .nav div:nth-child(2) {
+        display: flex;
+        align-items: center;
+        padding-right: 1rem;
+        font-weight: bolder;
+    }
+        .nav div:nth-child(2) a:nth-child(-n+3) {
+            color: #f5f5f5ea;
+            text-decoration: none;
+            padding: 0 1rem;
+        }
+
+@media (min-width: 801px) {
+    .mobile-nav {
+        display: none;
+    }
+}
+
+@media (max-width: 800px) {
+    .full-nav {
+        display: none;
+    }
+
+    .mobile-nav {
+        padding: 0;
+        height: 4rem;
+        font-size: 2rem;
+    }
+
+    .fa-bars {
+        padding: .5rem;
+    }
+}
+
+/* overlay */
+/* mobile overlay nav */
+
+#overlay {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 58, 116, 0.7);
+    z-index: 2;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.overlay-text a {
+    display: block;
+    color: #f5f5f5ea;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 3rem;
+    padding: .5rem 2rem;
+    transition: all 200ms ease-in-out;
+}
+
+/* X button on Mobile Navigation Menu */
+.fa-times {
+    font-size: 4rem;
+    color: #f5f5f5ea;
+    padding: 1rem;
+}
+    .fa-times:hover {
+        animation: rotateAnimation 200ms ease-in-out;
+    }
+    /* X Button Rotate Animation */
+    @keyframes rotateAnimation {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(90deg);
+        }
+    }
+
+/* Green & Blue Spacer */
+.gb-spacer {
+    width: 100%;
+    height: 2.5rem;
+    background: linear-gradient(90deg, rgb(7, 90, 0) 50%, rgb(0, 58, 116) 100%);
+}
+
+/* Knightwood Oak Rifle Club Hero-Section */
+.hero-section {
+    position: relative;
+    color: #f5f5f5ea;
+}
+    .hero-section-image {
+        height: auto;
+        width: 100%;
+        display: block;
+        -webkit-filter: blur(.1rem); /* Safari 6.0 - 9.0 */
+        filter: blur(.1rem);
+    }
+        .hero-section-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            -webkit-filter: drop-shadow(.1rem .2rem .1rem #272727);
+            filter: drop-shadow(-.2rem .2rem .2rem #272727);
+        }
+        .hero-section-text h1 {
+            font-size: 3rem;
+            margin: 1rem 0;
+        }
+        @media (max-width: 1430px) {
+            .hero-section-text h1 {
+                font-size: 3rem;
+            }
+        }
+        
+        @media (max-width: 600px) {
+            .hero-section-text h1 {
+                font-size: 1.5rem;
+            }
+
+            .hero-section-button {
+                font-size: 1rem;
+            }
+        }
+        .hero-section-button {
+            margin: 0;
+            padding: .5rem 2rem;
+            background-color: #006d69;
+            color: #f5f5f5ea;
+            border: none;
+            border-radius: 1.5rem;
+            font-size: 1.5rem;
+            text-decoration: none;
+        }
+
+/* Center Something */
+.center {
+    text-align: center;
+}
+
+/* Basic Layouts */
+    /* Basic Text Section */
+    .text-section {
+        margin: .5rem auto 2rem;
+        max-width: 1200px;
+        color: #272727;
+        justify-items: left;
+        font-size: 1.5rem;
+    }
+    @media (max-width: 600px) {
+        .center, .text-section {
+            text-align: center;
+            max-width: 95%;
+        }
+    }
+        /* Pink & Blue - Text Section */
+        .bp-text-section {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            justify-items: center;
+            text-align: center;
+            margin: 0 auto 2rem;
+            max-width: 1200px;
+            
+        }
+
+    /* Basic Image Section */
+    .image-section img {
+        margin: .5rem auto 2rem;
+        max-width: 1200px;
+        justify-items: center;
+        height: auto;
+        max-width: 33%;
+        display: block;
+        border-radius: .5rem;
+        justify-items: center;
+    }
+    @media (max-width: 768px) {
+        .image-section img {
+            max-width: 66%;
+        }
+    }
+
+    /* Double Section */
+    .double-section {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: .5rem auto 2rem;
+        max-width: 1200px;
+        color: #272727;
+        justify-items: center;
+        font-size: 1.5rem;
+    }
+
+    /* Triple Section */
+    .triple-section {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin: .5rem auto 2rem;
+        max-width: 1200px;
+        color: #272727;
+        justify-items: center;
+        font-size: 1.5rem;
+    }
+        .double-section img, .triple-section img {
+            border-radius: 1rem;
+            width: 95%;
+        }
+
+        /* Triple Section Child */
+        .double-section-child, .triple-section-child {
+            width: 85%;
+            text-align: center;
+            color: #272727;
+            border-radius: 1rem;
+        }
+
+        /* Blue & Pink Double Section Child */
+        .bp-text-section-child, .bp-double-section-child, .bp-triple-section-child {
+            width: 85%;
+            text-align: center;
+            color: #f5f5f5ea;
+            border-radius: 1rem;
+            background: linear-gradient(90deg, rgba(91,206,250,1) 0%, rgba(245,169,184,1) 100%);
+        }
+        .double-section-child div p, .bp-double-section-child div p, .bp-triple-section-child div p, .triple-section-child div p {
+            text-align: center;
+            font-size: 1.5rem;
+            padding: 0 1.5rem;
+        }
+        .bp-text-section-child div h2, .double-section-child div h2, .bp-double-section-child div h2, .bp-triple-section-child div h2, .triple-section-child div h2 {
+            font-size: 2.25rem;
+        }
+        .bp-text-section-child div a, .double-section-child div a, .bp-double-section-child div a, .bp-triple-section-child div a, .triple-section-child div a {
+            padding: .5rem 1.5rem;
+            background-color: #F5A9B8;
+            color: #fff;
+            border: none;
+            border-radius: 1.5rem;
+            font-size: 1.5rem;
+            text-decoration: none;
+            align-self: center;
+        }
+        @media (max-width: 768px) {
+            .bp-text-section, .double-section, .triple-section {
+                grid-template-columns: repeat(1, 1fr);
+                grid-gap: 1rem;
+            }
+        
+            .bp-text-section-child, .double-section-child, .bp-double-section-child, .triple-section-child, .bp-triple-section-child {
+                padding-bottom: 3rem;
+            }
+        }
+        /* Round Images for Meet the Team */
+        .round-image img {
+            border-radius: 25rem;
+        }
+
+/* Text Decorations None */
+.delinkify {
+    text-decoration: none;
+}
+
+/* Boldness */
+    /* 600 Bold */
+    .bold-600 {
+        font-weight: 600;
+    }
+    /* Bold */
+    .bold {
+        font-weight: bold;
+    }
+
+/* Colours */
+    /* Dark Gray */
+    .d-gray {
+        color: #272727;
+    }
+
+    /* Off White */
+    .o-white {
+        color: #f5f5f5ea;
+    }
+
+    /* Light Green */
+    .l-green {
+        color: #09c20f;
+    }
+
+/* footer */
+footer {
+    background-color: #272727;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    padding: 1rem;
+    color: #006d04;
+    font-size: 1rem;
+}
+    footer div:nth-child(2) {
+        text-align: center;
+    }
+        footer div:nth-child(2) div:nth-child(1) {
+            display: flex;
+            justify-content: center;
+        }
+            footer div:nth-child(2) div:nth-child(1) a {
+                text-decoration: none;
+                color: #08cec8;
+                padding: .5rem;
+                font-weight: bolder;
+            }
+    footer div:nth-child(3) {
+        text-align: right;
+    }
+    footer div:nth-child(1) img,
+    footer div:nth-child(3) img {
+        padding: .5rem;
+    }
