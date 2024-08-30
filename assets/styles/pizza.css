@@ -168,7 +168,7 @@ header {
     }
         .hero-section-text {
             position: absolute;
-            top: 20%;
+            top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
             text-align: center;
@@ -183,20 +183,20 @@ header {
             margin: 1rem 0;
         }
         @media (max-width: 1430px) {
-            .hero-section-text img {
-                display: none;
+            .hero-section-image {
+                object-fit: cover;
+                width: 100%;
+                height: 90vh;
             }
             .hero-section-text h1 {
                 font-size: 3rem;
             }
             .hero-section-text h1 {
                 font-size: 1.5rem;
-                display: none;
             }
 
             .hero-section-button {
                 font-size: 1rem;
-                display: none;
             }
         }
         
