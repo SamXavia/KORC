@@ -1,63 +1,108 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <!-- Title of the Webpage -->
-    <title>KORC CONTACT</title>
-
-    <!-- Metadata -->
-      <!-- Description -->
-      <meta name="description" content="">
-
-    <!-- Webpage Icon -->
-    <link rel="icon" href="">
-
-    <!-- Import CSS -->
-    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
-
-    <!-- for phones? -->
-    <meta name="viewport">
+    <!-- Version 2-->
+      <meta charset="UTF-8">
+      <!-- Viewport / Layout Size -->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- Personal Stylesheets -->
+      <link rel="stylesheet" href="assets/styles/pizza.css">
+      <!-- Personal Scripts -->
+      <script src="assets/scripts/mobilenav.js"></script>
+      <script src="assets/scripts/htmlfix.js"></script>
+      <!-- Favicon / Website Icon -->
+      <link rel="icon" type="image/png" href="/assets/img/favicon.png">
+      <!-- Webpage Title -->
+      <title>Knightwood Oak Rifle Club</title>
+      <!-- Description of Webpage (#1) -->
+      <meta name="description" content="We shoot targets at the bottom of a range">
+      <!-- Imported Fonts -->
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+        <!-- Font Awesome CDN -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Version 1 - Personal CSS -->
+      <!-- <link rel="stylesheet" type="text/css" href="style.css" media="screen" /> -->
   </head>
   <body class="body">
-    <center> <h2 class="title"> KNIGHTWOOD OAK RIFLE CLUB </h2> </center>
-    <br>
-    <!-- Navigation -->
-    <div class="nav">
-      <!-- News -->
-      <span class="hovertext" data-hover="NEWS">
-        <a href="news.html">
-          <img class="icon" src="./assets/icons/news.png" alt="NEWS"> </img>
-        </a>
-      </span>
-      <!-- Home -->
-      <span class="hovertext" data-hover="HOME">
-        <a href="index.html">
-          <img class="icon" src="./assets/icons/home.png" alt="HOME"> </img>
-        </a>
-      </span>
-      <!-- Contact Page -->
-      <span class="hovertext" data-hover="CONTACT">
-        <a href="contact.html">
-          <img class="icon" src="./assets/icons/contact.png" alt="CONTACT"> </img>
-        </a>
-      </span>
-    </div>
-    <br>
-    <!-- Main Box -->
-    <div class="box">
-      <br>
+    <!-- overlay for mobile -->
+    <div id="overlay">
       <div>
-        Interested in learning Smallbore
-        <br>
-        Target Rifle shooting?
-        <br>
-        <br>
-        Please contact us at:
-        <center> <h3> wedge.sj@btinternet.com </h3> </center>
+          <i class="fa fa-times" title="button to close mobile navigation" onclick="off()"></i>
+      </div>
+      <div class="overlay-text">
+          <a href="/">Home</a>
+          <a href="about">About</a>
+          <a href="news">News</a>
+          <a href="contact" class="contact-nav">Contact</a>
       </div>
     </div>
-    <!-- Footer -->
-    <center>
-      <p> <a href="https://playprofile.net/" target="_blank"> ©Copyright - Samantha Xavia 2022 </a> </p>
-    </center>
+    <header>
+      <!-- Full Nav -->
+      <nav class="nav full-nav">
+          <div>
+              <a href="/">
+                  <img src="assets/img/favicon.png" alt="Knightwood Oak Rifle Club Logo" style="width: 5rem;" loading="lazy">
+              </a>
+          </div>
+          <div>
+              <a href="/">Home</a>
+              <a href="about">About</a>
+              <a href="news">News</a>
+              <a href="contact" class="contact-nav">Contact</a>
+          </div>
+      </nav>
+      <!-- Mobile Nav -->
+      <nav class="nav mobile-nav">
+          <div>
+              <a href="/">
+                  <img src="assets/img/favicon.png" alt="Knightwood Oak Rifle Club Logo" style="width: 2.5rem;" loading="lazy">
+              </a>
+          </div>
+          <div>
+              <i class="fa-solid fa-bars" title="button to open navigation" onclick="on()"></i>
+          </div>
+      </nav>
+  </header>
+
+  <!-- Main -->
+  <main>
+    <!-- Spacer -->
+    <div class="gb-spacer"></div>
+    <div>
+      <h1 class="center d-gray"> Contact Us </h1>
+      <center>
+        <div class="text-section">
+          Email: wedge.sj@btinternet.com
+        </div>
+      </center>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <div class="gb-spacer"></div>
+  <footer>
+    <div>
+        <img src="assets/img/favicon.png" alt="Knightwood Oak Rifle Club Logo" style="width: 6rem;" loading="lazy">
+    </div>
+    <div>
+        <div>
+            <a href="/"> Home </a>
+            <a href="about"> About </a>
+            <a href="news"> News </a>
+            <a href="contact"> Contact </a>
+        </div>
+        <div>
+            <h4 class="o-white">
+                <i class="fa-solid fa-copyright o-white"> Copyright 2024</i>
+                <br>
+                <a href="https://southampton.social/@sam" target="_blank" class="delinkify l-green">Created by Samantha E Xavia</a>
+            </h4>
+        </div>
+    </div>
+    <div class="footer-socials"></div>
+    </footer>
   </body>
 </html>
